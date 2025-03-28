@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+  .metal-text {
+    position: relative;
+    color: #c0c0c0;
+    background: linear-gradient(
+      to right, 
+      #c0c0c0 0%, 
+      #ffffff 10%, 
+      #c0c0c0 20%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: metal-shine 3s linear infinite;
+    
+    text-shadow: 
+      0 2px 4px rgba(0,0,0,0.2),
+      0 -1px 1px rgba(255,255,255,0.3);
+  }
+
+  @keyframes metal-shine {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+}
