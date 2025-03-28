@@ -17,7 +17,6 @@ const ServiceCard = ({ icon: Icon, title, description, borderColor}) => {
     </div>
   );
 };
-
 const ServicesSection = ({id}) => {
   const services = [
     {
